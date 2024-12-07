@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+    min-height: 100vh;
+    background-color: #d7efec !important;
+    font-family: "Poppins";
+    --sb-track-color: #fff;
+    --sb-thumb-color: #ae87bb;
+    --sb-size: 20px;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    margin-left: 15px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    margin-left: 15px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #60beb2;
+  border-bottom: 5px solid white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed; /* Fixa o header no topo */
+  top: 0; /* Garante que o header esteja no topo */
+  z-index: 1000; /* Coloca o header acima de outros elementos */
+}
+
+.imgH{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.imgC{
+    height: 96px;
+    width: 96px;
+}
+
+footer{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    height: 85px;
+    background-color: #ae87bb;
+    border-top: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    font-family:"Josefin Sans";
+}
+
+.pop{
+    margin-top: 5px;
+}
+
+.main-content {
+    width: 100%;
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+  padding-top: 100px; /* Adiciona espaço para o header fixo */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajusta o espaçamento entre os cards */
+  justify-content: center; /* Centraliza os cards na página */
+  align-items: flex-start; /* Mantém o alinhamento ao topo */
+}
+
+.card {
+    --bg: #f7f7f8;
+    --hover-bg: #fae5ff;
+    --hover-text: #ae87bb;
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 400px;
+    height: 325px;
+    margin-right: 15px;
+  }
+  
+  .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  
+  .card > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card > strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+  }
+  
+  .card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+  .card:hover {
+    background: var(--hover-bg);
+  }
+  
+  .card:hover>div,.card:hover>strong {
+    opacity: 0;
+  }
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+input::placeholder{
+  color: #ffffffbe;
+} 
+
+.input{
+    margin-top: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans";
+}
+
+.input-wrapper input {
+  background-color: #292929;
+  border: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  width: 25em;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 0.4rem rgb(164, 97, 187);
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: #df92b1;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: -50px; /* Aproxima os cards do input */
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+    min-height: 100vh;
+    background-color: #dee9f5 !important;
+    font-family: "Poppins";
+  }
+
+* {
+  font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #7da8d8;
+    border-bottom: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imgH{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.imgC{
+    height: 96px;
+    width: 96px;
+}
+
+footer{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    height: 85px;
+    background-color: #ae87bb;
+    border-top: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family:"Josefin Sans";
+}
+
+.pop{
+    margin-top: 5px;
+}
+
+.main-content {
+    width: 100%;
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form input:focus{
+  border: 1px solid #ae87bb;
+}
+
+.card {
+  transition: height 0.3s ease-in-out;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+  --main-color: #7da8d8;
+  --submain-color: #78858F;
+  --bg-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  width: 800px;
+  height: 484px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+}
+
+.ava{
+  width: 130px;
+  height: 130px;
+}
+
+.card__img {
+  height: 192px;
+  width: 100%;
+}
+
+.card__img svg {
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__avatar {
+  position: absolute;
+  width: 158px;
+  height: 158px;
+  background: var(--bg-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 120px);
+}
+
+.card__avatar svg {
+  width: 130px;
+  height: 130px;
+}
+
+.card__title {
+  margin-top: 70px;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.card__subtitle {
+  margin-top: -5px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: var(--submain-color);
+}
+
+.card__btn {
+  margin-top: 15px;
+  width: 150px;
+  height: 53px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ae87bb;
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.card__btn2 {
+  margin-top: 5px;
+  width: 70px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 10px;
+  color: #ae87bb;
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.card__btn-solid {
+  background: #ae87bb;
+  color: var(--bg-color);
+  margin-top: -15px;
+}
+
+.card__btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn-solid:hover {
+  background: #7da8d8;
+  color: white;
+}
+
+#alert-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.alert-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.alert-content #confirm-delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.alert-content #cancel-delete {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.card__avatar {
+  transition: transform 0.3s ease;
+}
+
+.card__avatar.editing {
+  transform: translateY(-60px); /* Ajuste o valor conforme necessário */
+}
+
+.card__edit-mode .card__avatar {
+  margin-bottom: 20px; /* Adiciona uma margem inferior ao avatar quando em modo de edição */
+}
+
+.card__edit-mode .card__title,
+.card__edit-mode .card__subtitle {
+  margin-top: 10px; /* Ajusta a distância entre o título/subtítulo e o conteúdo */
+}
+

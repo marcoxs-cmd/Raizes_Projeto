@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+    min-height: 100vh;
+    background-color:#e3d5e7 !important;
+    font-family: "Poppins";
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #f0f0f0;
+    --sb-track-color: #005F73;
+    --sb-thumb-color: #edb858;
+    --sb-size: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    margin-left: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+} */
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(174,135,187,1);
+    border-bottom: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imgH{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.imgC{
+    height: 96px;
+    width: 96px;
+}
+
+footer{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    height: 85px;
+    background-color: #7da8d8;
+    border-top: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family:"Josefin Sans";
+}
+
+.pop{
+    margin-top: 5px;
+}
+
+.main-content {
+    width: 100%;
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards {
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+}
+
+/* From Uiverse.io by fanishah */ 
+.card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20.5rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: rgba(174,135,187,1) 0.5rem solid;
+    transition: all 0.1s ease-in;
+    box-shadow: 0rem 0.4rem 0.6rem rgba(65, 0, 87, 0.336);
+   }
+
+   .card:hover{
+    transform: translateY(-1.1rem);
+    border: #60beb2 1.1em solid;
+    border-radius: 2.5rem 0 2.5rem 0; 
+   }
+  
+.card.active {
+    width: 23.5rem;
+    height: 28rem;
+}
+
+.card.blur {
+    filter: blur(5px); /* Ajuste conforme necessário */
+    transition: filter 0.3s ease;
+}
+
+.card:hover.mudar {
+    border: #ff006a 1.1em solid;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight:600;
+    color:#2f9bb9;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+footer .pop {
+    display: flex;
+    align-items: center; /* Alinha o texto com a imagem */
+    gap: 15px; /* Espaço entre o texto e a imagem */
+}
+
+footer .futer {
+    width: 50px; /* Ajuste o tamanho da imagem */
+    height: 50px;
+    margin-top: -10px;
+}

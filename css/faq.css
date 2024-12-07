@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+    min-height: 100vh;
+    background-color:#f9ebd1 !important;
+    font-family: "Poppins";
+  }
+
+* {
+  text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #e8955e;
+    border-bottom: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imgH{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.imgC{
+    height: 96px;
+    width: 96px;
+}
+
+footer{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    height: 85px;
+    background-color: #e05c81;
+    border-top: 5px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family:"Josefin Sans";
+}
+
+.pop{
+    margin-top: 5px;
+}
+
+.main-content {
+    width: 100%;
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input::placeholder{
+  color: #ffffffbe;
+} 
+
+
+.cam{
+  margin-top: 175px;
+  width: 540px;
+  height: 110px;
+}
+
+.regis {
+  background-image: linear-gradient(180deg, #e05c81 0%, #e8955e 100%);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Adicionado: */
+  -webkit-text-fill-color: transparent;
+}
+
+.regis{
+  font-size: 30px;
+  font-family: Poppins;
+  color:black;
+  font-weight: bold;
+  margin-bottom: -15px;
+  margin-top: 15px;
+}
+
+.nome, .des, .mod, .ax{
+  width: 520px;
+    margin-top: 35px;
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: #ffffffb9;
+}
+
+.des {
+  height: 200px;
+}
+
+.input-wrapper input, .input-wrapper textarea {
+  background-color: #292929;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 520px;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 0.4rem #e8955e;
+  cursor: pointer;
+}
+
+  
+a.button {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #FAFAFA;
+  background: #292929;
+  border-radius: 10px;
+  width: 175px;
+  height: 65px;
+  line-height: 65px;
+  box-shadow: 0px 5px #e8955e;
+  font-family: "Poppins";
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 40px; /* Espaço entre os botões */
+  margin-top: 40px;
+}
+
+button {
+  margin: 0; /* Remove as margens que estavam desalinhando os botões */
+  font-size: 1.6rem;
+  color: #FAFAFA;
+  border-radius: 10px;
+  border: 2px solid #292929;
+  background: #292929;
+  box-shadow: 0px 5px #e8955e;
+  cursor: pointer;
+  width: 175px;
+  height: 65px;
+  font-family: "Poppins";
+}
+  
+button:active, a.button:active{
+    box-shadow: none;
+    transform: translate(0px, 3px);
+}
+
+
+.register {
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.alert-success {
+  padding: 25px 40px;
+  position: fixed;
+  top: -150px;
+  right: 745px;
+  background-color: #60beb2;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.alert {
+  padding: 25px 40px;
+  position: fixed;
+  right: -500px;
+  top: -150px; 
+  right: 642px;
+  background-color: rgb(215,10,54);
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+textarea {
+  text-align: center; /* Alinha o texto horizontalmente */
+  vertical-align: middle; /* Tenta ajudar no alinhamento vertical, mas não funciona para <textarea> */
+  height: 150px;
+  width: 300px;
+  padding: 30px; /* Adiciona padding para ajudar a centralizar verticalmente */
+  resize: none; /* Desativa o redimensionamento */
+  line-height: 20px;
+}
+
+textarea::placeholder {
+  text-align: center; /* Alinha o placeholder horizontalmente */
+  line-height: 160px; /* Alinha verticalmente o placeholder */
+  color: #ffffffb9;
+}
+
+@keyframes desce {
+  0% {
+      transform: translateY(-400px);
+  }
+  100% {
+      transform: translateY(200px);
+  }
+}
+
+@keyframes sobe {
+  0% {
+      transform: translateY(200px);
+  }
+  100% {
+      transform: translateY(-400px);
+  }
+}
+
+.desce {
+  animation: desce 1.5s ease-out;
+}
+
+.sobe {
+  animation: sobe 1s ease-out forwards;
+}
+
+.alert-success.active, .alert.active {
+  display: block;
+}
+
+.alert-success.sobe, .alert.sobe {
+  animation: sobe 1s ease-out forwards;
+}
+
+.alert-success.desce, .alert.desce {
+  animation: desce 1s ease-out forwards;
+}
+
+/* Estilo da estrutura principal */
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center; /* Centraliza o botão */
+  width: 100%; /* Certifica-se de que o wrapper ocupa a largura correta */
+}
+
+/* Estilo do botão */
+.upload-button {
+  background-color: #292929;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.3rem;
+  height: 53px;
+  width: 25em;
+  margin-top: 35px;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem #e8955e;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Josefin Sans";
+  border: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Cor e efeito quando o arquivo é selecionado */
+.upload-button.selected {
+  background-color: #dee9f5; /* Verde para indicar sucesso */
+  color: black;
+}
+
+/* Garante que o botão esteja centralizado e com largura total do contêiner */
+.input-wrapper {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+}
+
+.branco{
+  background-color: rgba(255, 255, 255, 0.808);
+  width: 800px;
+  height: 635px;
+  border-radius: 30px;
+  border: 5px solid #dee9f5;
+  display: block;
+  margin-top: -55px;
+}
+
+.button2{
+  margin-top: 45px;
+}
